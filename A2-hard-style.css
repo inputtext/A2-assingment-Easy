@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Outfit", sans-serif;
+    background: #050505;
+    color: white;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 60px;
+    background:
+    radial-gradient(circle at top,#111 0%,#050505 70%);
+}
+
+/* HEADING */
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 80px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+.line{
+    margin-top: 10px;
+    color: #ff9800;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.line span{
+    width: 90px;
+    height: 2px;
+    background: #ff9800;
+    display: block;
+}
+
+/* CARDS */
+
+.cards{
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 280px;
+    background: linear-gradient(to bottom,#161616,#090909);
+
+    border-radius: 28px;
+    padding: 28px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    text-align: center;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.active{
+    border: 1px solid #ff9800;
+    box-shadow: 0 0 30px rgba(255,152,0,0.25);
+}
+
+.tag{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    border: 1px solid #ff9800;
+    color: #ff9800;
+
+    padding: 8px 15px;
+    border-radius: 30px;
+
+    font-size: 14px;
+}
+
+.card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card h2{
+    margin-top: 25px;
+
+    font-size: 42px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.card p{
+    margin-top: 10px;
+    color: #9b9b9b;
+}
+
+.small-line{
+    width: 70px;
+    height: 2px;
+    background: #ff9800;
+
+    margin: 20px auto;
+}
+
+.card h3{
+    color: #ff9800;
+    font-size: 34px;
+}
+
+/* SPECIAL SECTION */
+
+.special{
+    margin-top: 70px;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    background: linear-gradient(to right,#101010,#070707);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.special-left{
+    width: 35%;
+}
+
+.special-left img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.special-right{
+    width: 65%;
+}
+
+.special-right h5{
+    color: #ff9800;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.special-right h2{
+    margin-top: 15px;
+
+    font-size: 65px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.special-right p{
+    margin-top: 25px;
+
+    color: #a0a0a0;
+
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.special-right button{
+    margin-top: 35px;
+
+    padding: 18px 40px;
+
+    border-radius: 40px;
+    border: 1px solid #ff9800;
+
+    background: transparent;
+    color: #ff9800;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(255,152,0,0.4);
+
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #c8c8c8;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #c8c8c8;
+}
+
+.socials{
+    color: #ff9800;
+    font-size: 20px;
+}
